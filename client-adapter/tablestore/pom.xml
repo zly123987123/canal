@@ -30,7 +30,7 @@
         <dependency>
             <groupId>com.aliyun.openservices</groupId>
             <artifactId>tablestore</artifactId>
-            <version>5.10.3</version>
+            <version>5.11.1</version>
             <classifier>jar-with-dependencies</classifier>
             <exclusions>
                 <exclusion>
@@ -80,7 +80,7 @@
                             <tasks>
                                 <copy todir="${project.basedir}/../launcher/target/classes/tablestore" overwrite="true">
                                     <fileset dir="${project.basedir}/target/classes/tablestore" erroronmissingdir="true">
-                                        <include name="*.yml" />
+                                        <include name="*.yml"/>
                                     </fileset>
                                 </copy>
                             </tasks>
