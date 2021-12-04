@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.apache.kudu</groupId>
             <artifactId>kudu-client</artifactId>
-            <version>1.6.0</version>
+            <version>1.15.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -71,7 +71,7 @@
                             <tasks>
                                 <copy todir="${project.basedir}/../launcher/target/classes/kudu" overwrite="true">
                                     <fileset dir="${project.basedir}/target/classes/kudu" erroronmissingdir="true">
-                                        <include name="*.yml" />
+                                        <include name="*.yml"/>
                                     </fileset>
                                 </copy>
                             </tasks>
