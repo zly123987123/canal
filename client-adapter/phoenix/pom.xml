@@ -77,7 +77,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.58</version>
+            <version>2.0.2</version>
             <scope>provided</scope>
         </dependency>
 
@@ -140,7 +140,7 @@
                                 </copy>
                                 <copy todir="${project.basedir}/../launcher/target/classes/phoenix" overwrite="true">
                                     <fileset dir="${project.basedir}/target/classes/phoenix" erroronmissingdir="true">
-                                        <include name="*.yml" />
+                                        <include name="*.yml"/>
                                     </fileset>
                                 </copy>
                             </tasks>
