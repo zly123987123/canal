@@ -29,7 +29,7 @@
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>5.5.0</version>
+            <version>5.14.3</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.mq-amqp</groupId>
@@ -78,12 +78,12 @@
                             <tasks>
                                 <copy todir="${project.basedir}/../../deployer/target/canal/plugin" overwrite="true">
                                     <fileset dir="${project.basedir}/target" erroronmissingdir="true">
-                                        <include name="connector.rabbitmq-${project.version}-jar-with-dependencies.jar" />
+                                        <include name="connector.rabbitmq-${project.version}-jar-with-dependencies.jar"/>
                                     </fileset>
                                 </copy>
                                 <copy todir="${project.basedir}/../../client-adapter/launcher/target/canal-adapter/plugin" overwrite="true">
                                     <fileset dir="${project.basedir}/target" erroronmissingdir="true">
-                                        <include name="connector.rabbitmq-${project.version}-jar-with-dependencies.jar" />
+                                        <include name="connector.rabbitmq-${project.version}-jar-with-dependencies.jar"/>
                                     </fileset>
                                 </copy>
                             </tasks>
