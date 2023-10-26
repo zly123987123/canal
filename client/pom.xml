@@ -117,7 +117,7 @@
 		<dependency>
 			<groupId>com.rabbitmq</groupId>
 			<artifactId>amqp-client</artifactId>
-			<version>5.5.0</version>
+			<version>5.14.3</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -191,7 +191,7 @@
 								</relocation>
 							</relocations>
 							<transformers>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer" />
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer"/>
 							</transformers>
 						</configuration>
 					</execution>
