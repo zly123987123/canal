@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka_2.11</artifactId>
-            <version>1.1.1</version>
+            <version>2.2.2</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -73,12 +73,12 @@
                             <tasks>
                                 <copy todir="${project.basedir}/../../deployer/target/canal/plugin" overwrite="true">
                                     <fileset dir="${project.basedir}/target" erroronmissingdir="true">
-                                        <include name="connector.kafka-${project.version}-jar-with-dependencies.jar" />
+                                        <include name="connector.kafka-${project.version}-jar-with-dependencies.jar"/>
                                     </fileset>
                                 </copy>
                                 <copy todir="${project.basedir}/../../client-adapter/launcher/target/canal-adapter/plugin" overwrite="true">
                                     <fileset dir="${project.basedir}/target" erroronmissingdir="true">
-                                        <include name="connector.kafka-${project.version}-jar-with-dependencies.jar" />
+                                        <include name="connector.kafka-${project.version}-jar-with-dependencies.jar"/>
                                     </fileset>
                                 </copy>
                             </tasks>
